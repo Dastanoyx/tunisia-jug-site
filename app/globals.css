@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 1.25rem;
+
+  /* ☕ Cream / parchment background */
+  --background: 36 45% 94%;
+  --foreground: 222 28% 14%;
+
+  /* Cards */
+  --card: 36 40% 97%;
+  --card-foreground: 222 28% 14%;
+
+  --popover: 36 40% 97%;
+  --popover-foreground: 222 28% 14%;
+
+  /* 🔥 Java orange (EVENT CARD + CTA) */
+  --primary: 28 85% 52%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Soft coffee tones */
+  --secondary: 36 35% 92%;
+  --secondary-foreground: 222 28% 14%;
+
+  --muted: 36 30% 90%;
+  --muted-foreground: 215 18% 40%;
+
+  /* Gold accent (borders, icons) */
+  --accent: 32 65% 88%;
+  --accent-foreground: 28 70% 32%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Dark contour like screenshot */
+  --border: 222 28% 14%;
+  --input: 36 30% 90%;
+  --ring: 28 85% 52%;
+}
+
+.dark {
+  --background: 222 32% 10%;
+  --foreground: 0 0% 98%;
+
+  --card: 222 30% 12%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 222 30% 12%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 28 85% 60%;
+  --primary-foreground: 222 32% 10%;
+
+  --secondary: 222 25% 18%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 222 25% 18%;
+  --muted-foreground: 215 18% 65%;
+
+  --accent: 28 45% 20%;
+  --accent-foreground: 32 70% 80%;
+
+  --border: 0 0% 100%;
+  --input: 222 25% 22%;
+  --ring: 28 85% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
