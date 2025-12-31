@@ -14,8 +14,8 @@ export type Event = {
 export const events: Event[] = [
     {
         title: "Coffee & Talks — Tunisia JUG Kickoff",
-        date: "2025-12-27",
-        time: "18:30",
+        date: "2026-01-03",
+        time: "12:00",
         location: "Tunis",
         city: "Tunis",
         description:
