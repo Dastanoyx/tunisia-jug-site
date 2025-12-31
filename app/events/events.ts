@@ -15,8 +15,8 @@ export const events: Event[] = [
     {
         title: "Tunisia JUG Kickoff Meetup",
         status: "upcoming",
-        date: "2025-12-27",
-        time: "",
+        date: "2026-01-03",
+        time: "12:00",
         durationMinutes: 90,
         location: "Tunis",
         description: "An informal kickoff to meet each other, share the community vision, and start building Tunisia JUG together.",
