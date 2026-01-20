@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, type Variants } from "framer-motion";
 import {
@@ -115,9 +114,7 @@ export default function JoinPage() {
                 >
                     {platforms.map((p) => {
                         const Icon = p.icon;
-
-                        const isLive = p.status === "live" && p.href && p.href !== "#";
-                        const Wrapper: any = isLive ? "a" : "div";
+                        const isLive = p.status === "live";
 
                         return (
                             <motion.div key={p.key} variants={fadeUp}>
@@ -132,7 +129,7 @@ export default function JoinPage() {
                                             </div>
 
                                             {isLive ? (
-                                                <span className="inline-flex items-center gap-1 rounded-full border border-black/10 bg-white/70 px-2.5 py-1 text-[11px] font-medium text-foreground">
+                                                <span className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-2.5 py-1 text-[11px] font-medium text-foreground">
                           Live <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                         </span>
                                             ) : (
@@ -191,7 +188,6 @@ export default function JoinPage() {
                         </div>
                     </div>
 
-                    {/* quick link */}
                     <div className="mt-4">
                         <a
                             href="https://www.linkedin.com/company/jug-tunisia/"
