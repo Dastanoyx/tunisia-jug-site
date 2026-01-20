@@ -50,7 +50,7 @@ export const events: Event[] = [
             {
                 name: "Nacho Cougil",
                 note: "For encouraging the creation of this JUG, guiding the process, and supporting the initiative from day one.",
-                linkedin: "https://www.linkedin.com/in/nachocougil/",
+                linkedin: "https://www.linkedin.com/in/icougil/",
             },
         ],
     },
